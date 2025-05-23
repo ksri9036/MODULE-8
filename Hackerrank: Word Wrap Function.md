@@ -26,9 +26,20 @@ To write a Python function that takes a long string and a specified width, and r
 
 
 ## 🧪 Program
-Add Code Here
+def wrap(string, max_width):
+    wrapped_lines = []
+    for i in range(0, len(string), max_width):
+        wrapped_lines.append(string[i:i+max_width])
+    return '\n'.join(wrapped_lines)
+
+# Example usage
+text = input("Enter a long string: ")
+width = int(input("Enter max width: "))
+print("\nWrapped Text:\n")
+print(wrap(text, width))
 
 ## Sample Output
+![442607353-2b4d8e9d-9a10-442f-a211-8711293d4f67](https://github.com/user-attachments/assets/049f74c2-5f8d-4664-8585-655b7da56e31)
 
 ## Result
-
+Program is verified successfully.
